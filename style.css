@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Merriweather:wght@300;400&display=swap');
+
+/* General Styling */
+:root {
+    --bg-color: #f9f9fc; /* Soft Light Gray */
+    --text-color: #333333; /* Dark Text */
+    --primary-color: #4a4a8c; /* Rich Indigo */
+    --accent-color: #6a84f2; /* Soft Lavender Blue */
+    --secondary-color: #e4e4fa; /* Light Lavender */
+    --border-color: #d3d3f5; /* Muted Lavender Gray */
+
+    --bg-color-dark: #1c1b29; /* Deep Charcoal Purple */
+    --text-color-dark: #d1cfe2; /* Soft Lavender Gray */
+    --primary-color-dark: #916dd5; /* Lavender */
+    --accent-color-dark: #6457a6; /* Muted Lavender */
+    --secondary-color-dark: #242239; /* Darker Purple */
+    --border-color-dark: #2d2b4f; /* Dark Purple Border */
+}
+
+/* General Body */
+body {
+    font-family: 'Poppins', sans-serif; /* Modern, clean font for body */
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif; /* Elegant serif font for headings */
+    margin: 0;
+}
+
+/* Header */
+header {
+    background: var(--primary-color);
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Biodata Box */
+.biodatabox {
+    background: var(--secondary-color);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-spacing: 10px;
+    font-size: 1.2
+}

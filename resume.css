@@ -1,0 +1,236 @@
+/* General Styling */
+:root {
+    --bg-color: #f9f9fc;
+    --text-color: #333333;
+    --primary-color: #4a4a8c;
+    --accent-color: #6a84f2;
+    --secondary-color: #e4e4fa;
+    --border-color: #d3d3f5;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: var(--primary-color);
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/* Left Side */
+.left_Side {
+    flex: 1;
+    max-width: 300px;
+    background: var(--secondary-color);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profileText {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imgBx img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profileText h2 {
+    margin: 10px 0 5px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.profileText span {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.contactInfo, .education, .language {
+    margin-top: 20px;
+}
+
+.contactInfo h3, .education h3, .language h3 {
+    margin: 0 0 10px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.contactInfo ul, .education ul, .language ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contactInfo ul li, .education ul li {
+    margin-bottom: 10px;
+}
+
+.contactInfo ul li span, .education ul li h4, .language ul li span {
+    display: block;
+    font-size: 0.9rem;
+}
+
+/* Right Side */
+.right_Side {
+    flex: 2;
+}
+
+.about {
+    margin-bottom: 30px;
+}
+
+.title2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.title2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--accent-color);
+    margin-top: 5px;
+}
+
+.about p {
+    margin: 0;
+}
+
+.box {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.year_company {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.year_company h5 {
+    margin: 5px 0;
+}
+
+.text h4 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.text p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Skills Section */
+.skills .box {
+    margin-bottom: 10px;
+}
+
+.skills .box h4 {
+    font-size: 1rem;
+    margin: 0 0 5px;
+}
+
+.skills .percent {
+    background: #e6e6e6;
+    border-radius: 20px;
+    height: 8px;
+    overflow: hidden;
+}
+
+.skills .percent div {
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 20px;
+}
+
+/* Interests Section */
+.interest ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.interest ul li {
+    background: var(--secondary-color);
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.interest ul li i {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.text-align-center {
+    text-align: center;
+    background: var(--primary-color);
+}
